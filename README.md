@@ -5,6 +5,10 @@
 Nền Tảng AI Tư Vấn & Lên Lịch Trình Du Lịch Thông Minh  
 
 ![Travel Logo](https://cdn-icons-png.flaticon.com/512/854/854878.png)
+<p align="center">
+  <img src="logoDaiNam.png" alt="DaiNam University Logo" width="200"/>
+  <img src="LogoAIoTLab.png" alt="AIoTLab Logo" width="170"/>
+</p>
 
 Sử dụng AI để gợi ý điểm đến, đặt tour, tư vấn khách sạn và lên kế hoạch du lịch cá nhân hóa một cách tự động.  
 
