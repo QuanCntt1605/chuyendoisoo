@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4f58201b776b63685073d752248198bc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4f58201b776b63685073d752248198bc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4f58201b776b63685073d752248198bc = L.map(
+                "map_4f58201b776b63685073d752248198bc",
+                {
+                    center: [21.6903, 103.96940000000001],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3cb4513c9dd425edf72ee2bea8aa6ba0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3cb4513c9dd425edf72ee2bea8aa6ba0.addTo(map_4f58201b776b63685073d752248198bc);
+        
+    
+            var marker_0b3a6fdaf98fc5439ee1044c76958407 = L.marker(
+                [22.2956, 103.7768],
+                {
+}
+            ).addTo(map_4f58201b776b63685073d752248198bc);
+        
+    
+        var popup_3479943d1182c23f4f678b089f96d075 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b97b9dae3967b8c06cce83bd10f22b18 = $(`<div id="html_b97b9dae3967b8c06cce83bd10f22b18" style="width: 100.0%; height: 100.0%;">1. Fansipan - Nóc nhà Đông Dương</div>`)[0];
+                popup_3479943d1182c23f4f678b089f96d075.setContent(html_b97b9dae3967b8c06cce83bd10f22b18);
+            
+        
+
+        marker_0b3a6fdaf98fc5439ee1044c76958407.bindPopup(popup_3479943d1182c23f4f678b089f96d075)
+        ;
+
+        
+    
+    
+            marker_0b3a6fdaf98fc5439ee1044c76958407.bindTooltip(
+                `<div>
+                     Fansipan - Nóc nhà Đông Dương
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dcc82419a6e38a3d3bbe886cc5229d01 = L.marker(
+                [20.7396, 105.2376],
+                {
+}
+            ).addTo(map_4f58201b776b63685073d752248198bc);
+        
+    
+        var popup_5ff75fb2fdcacfef6ccd47ee5c61c8e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53c5fdb3d43c6e857ae2fdc99efdef81 = $(`<div id="html_53c5fdb3d43c6e857ae2fdc99efdef81" style="width: 100.0%; height: 100.0%;">2. Mai Châu - Bản Lác</div>`)[0];
+                popup_5ff75fb2fdcacfef6ccd47ee5c61c8e1.setContent(html_53c5fdb3d43c6e857ae2fdc99efdef81);
+            
+        
+
+        marker_dcc82419a6e38a3d3bbe886cc5229d01.bindPopup(popup_5ff75fb2fdcacfef6ccd47ee5c61c8e1)
+        ;
+
+        
+    
+    
+            marker_dcc82419a6e38a3d3bbe886cc5229d01.bindTooltip(
+                `<div>
+                     Mai Châu - Bản Lác
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_93c09384ff2132658a9b7115c7cca002 = L.marker(
+                [21.386, 103.019],
+                {
+}
+            ).addTo(map_4f58201b776b63685073d752248198bc);
+        
+    
+        var popup_0d776c8c50cb1d9c0758805ae7505955 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f96da1a10b9ccef137c6fbf82b29360e = $(`<div id="html_f96da1a10b9ccef137c6fbf82b29360e" style="width: 100.0%; height: 100.0%;">3. Điện Biên - Đồi A1</div>`)[0];
+                popup_0d776c8c50cb1d9c0758805ae7505955.setContent(html_f96da1a10b9ccef137c6fbf82b29360e);
+            
+        
+
+        marker_93c09384ff2132658a9b7115c7cca002.bindPopup(popup_0d776c8c50cb1d9c0758805ae7505955)
+        ;
+
+        
+    
+    
+            marker_93c09384ff2132658a9b7115c7cca002.bindTooltip(
+                `<div>
+                     Điện Biên - Đồi A1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b044c86cc85a9787869a5dea97887c64 = L.marker(
+                [22.34, 103.8442],
+                {
+}
+            ).addTo(map_4f58201b776b63685073d752248198bc);
+        
+    
+        var popup_02227228bb0effd0310941e7dcaad70e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d27525fcf9590a85907cf0313b2c82a7 = $(`<div id="html_d27525fcf9590a85907cf0313b2c82a7" style="width: 100.0%; height: 100.0%;">4. Sapa - Ruộng bậc thang</div>`)[0];
+                popup_02227228bb0effd0310941e7dcaad70e.setContent(html_d27525fcf9590a85907cf0313b2c82a7);
+            
+        
+
+        marker_b044c86cc85a9787869a5dea97887c64.bindPopup(popup_02227228bb0effd0310941e7dcaad70e)
+        ;
+
+        
+    
+    
+            marker_b044c86cc85a9787869a5dea97887c64.bindTooltip(
+                `<div>
+                     Sapa - Ruộng bậc thang
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

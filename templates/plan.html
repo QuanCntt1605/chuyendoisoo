@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch trình du lịch {{ days }} ngày</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <h1>🗺️ Lịch trình gợi ý</h1>
+        <nav>
+            <a href="/">Trang chủ</a>
+            <a href="/chat">AI Hỏi đáp</a>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>📅 Gợi ý cho {{ days }} ngày khám phá Tây Bắc</h2>
+        <div class="map-container">
+            {{ map_html|safe }}
+        </div>
+        <p>💡 Mẹo: Bạn có thể hỏi AI để cá nhân hóa hành trình theo sở thích!</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Smart Travel Tây Bắc</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Du lịch Tây Bắc</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <h1>💬 Trợ lý AI Du lịch</h1>
+        <nav>
+            <a href="/">Trang chủ</a>
+            <a href="/plan">Lịch trình</a>
+        </nav>
+    </header>
+
+    <section class="chat-container">
+        <div id="chat-box" class="chat-box"></div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Hỏi về hành trình du lịch Tây Bắc...">
+            <button onclick="sendMessage()">Gửi</button>
+        </div>
+    </section>
+
+    <script>
+        async function sendMessage() {
+            const input = document.getElementById('user-input');
+            const message = input.value.trim();
+            if (!message) return;
+
+            const chatBox = document.getElementById('chat-box');
+            chatBox.innerHTML += `<div class="user-msg"><b>Bạn:</b> ${message}</div>`;
+            input.value = '';
+
+            try {
+                const res = await axios.post('/ask', { message });
+                const reply = res.data.reply || "Xin lỗi, tôi không hiểu câu hỏi này.";
+                chatBox.innerHTML += `<div class="ai-msg"><b>AI:</b> ${reply}</div>`;
+                chatBox.scrollTop = chatBox.scrollHeight;
+            } catch (err) {
+                chatBox.innerHTML += `<div class="ai-msg error">Lỗi khi gọi AI!</div>`;
+            }
+        }
+    </script>
+</body>
+</html>

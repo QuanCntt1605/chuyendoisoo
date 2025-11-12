@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_19ffcb2ff437c1b5fc383b6bf83fe0d6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_19ffcb2ff437c1b5fc383b6bf83fe0d6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_19ffcb2ff437c1b5fc383b6bf83fe0d6 = L.map(
+                "map_19ffcb2ff437c1b5fc383b6bf83fe0d6",
+                {
+                    center: [22.084366666666664, 104.12089999999999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e196796b036bcbed391eab8009bcf613 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_19ffcb2ff437c1b5fc383b6bf83fe0d6);
+        
+    
+            var marker_1f2bd8f494d451b3b7f04a48a7b5ea87 = L.marker(
+                [22.2956, 103.7768],
+                {}
+            ).addTo(map_19ffcb2ff437c1b5fc383b6bf83fe0d6);
+        
+    
+        var popup_a1801d407877b6f4f6dcd37ff07e4746 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64f76d2d897b758ff44e0be8fea3afa4 = $(`<div id="html_64f76d2d897b758ff44e0be8fea3afa4" style="width: 100.0%; height: 100.0%;">1. Fansipan - Nóc nhà Đông Dương</div>`)[0];
+                popup_a1801d407877b6f4f6dcd37ff07e4746.setContent(html_64f76d2d897b758ff44e0be8fea3afa4);
+            
+        
+
+        marker_1f2bd8f494d451b3b7f04a48a7b5ea87.bindPopup(popup_a1801d407877b6f4f6dcd37ff07e4746)
+        ;
+
+        
+    
+    
+            marker_1f2bd8f494d451b3b7f04a48a7b5ea87.bindTooltip(
+                `<div>
+                     Fansipan - Nóc nhà Đông Dương
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80a70a2e14ff1016c8f565f2235fd2b5 = L.marker(
+                [22.34, 103.8442],
+                {}
+            ).addTo(map_19ffcb2ff437c1b5fc383b6bf83fe0d6);
+        
+    
+        var popup_6362c39211c03cee7c1b0a97fa9abec8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af490bd1d38c2d502fc68a903188efc9 = $(`<div id="html_af490bd1d38c2d502fc68a903188efc9" style="width: 100.0%; height: 100.0%;">2. Sapa - Ruộng bậc thang</div>`)[0];
+                popup_6362c39211c03cee7c1b0a97fa9abec8.setContent(html_af490bd1d38c2d502fc68a903188efc9);
+            
+        
+
+        marker_80a70a2e14ff1016c8f565f2235fd2b5.bindPopup(popup_6362c39211c03cee7c1b0a97fa9abec8)
+        ;
+
+        
+    
+    
+            marker_80a70a2e14ff1016c8f565f2235fd2b5.bindTooltip(
+                `<div>
+                     Sapa - Ruộng bậc thang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf8a26099eb1fe5c131613f12c876b6d = L.marker(
+                [21.6175, 104.7417],
+                {}
+            ).addTo(map_19ffcb2ff437c1b5fc383b6bf83fe0d6);
+        
+    
+        var popup_929f084c82a86d06f0b457bca74dabc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5095a6831d550560ffecc72abb70bfe8 = $(`<div id="html_5095a6831d550560ffecc72abb70bfe8" style="width: 100.0%; height: 100.0%;">3. Mộc Châu - Đồi chè</div>`)[0];
+                popup_929f084c82a86d06f0b457bca74dabc2.setContent(html_5095a6831d550560ffecc72abb70bfe8);
+            
+        
+
+        marker_bf8a26099eb1fe5c131613f12c876b6d.bindPopup(popup_929f084c82a86d06f0b457bca74dabc2)
+        ;
+
+        
+    
+    
+            marker_bf8a26099eb1fe5c131613f12c876b6d.bindTooltip(
+                `<div>
+                     Mộc Châu - Đồi chè
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

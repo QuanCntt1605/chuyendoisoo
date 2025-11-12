@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3bfc0f878576555169ff68bd684db962 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3bfc0f878576555169ff68bd684db962" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3bfc0f878576555169ff68bd684db962 = L.map(
+                "map_3bfc0f878576555169ff68bd684db962",
+                {
+                    center: [21.67574, 104.12386],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ce868b71e9fd6b876b533f442204fbc2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3bfc0f878576555169ff68bd684db962);
+        
+    
+            var marker_20251155c0b5573a21a4d94e1110e27d = L.marker(
+                [20.7396, 105.2376],
+                {}
+            ).addTo(map_3bfc0f878576555169ff68bd684db962);
+        
+    
+        var popup_0de838034d1e608752400dc8efb5c215 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a81968688f8a2beff7043b0e8b5c0e0 = $(`<div id="html_7a81968688f8a2beff7043b0e8b5c0e0" style="width: 100.0%; height: 100.0%;">1. Mai Châu - Bản Lác</div>`)[0];
+                popup_0de838034d1e608752400dc8efb5c215.setContent(html_7a81968688f8a2beff7043b0e8b5c0e0);
+            
+        
+
+        marker_20251155c0b5573a21a4d94e1110e27d.bindPopup(popup_0de838034d1e608752400dc8efb5c215)
+        ;
+
+        
+    
+    
+            marker_20251155c0b5573a21a4d94e1110e27d.bindTooltip(
+                `<div>
+                     Mai Châu - Bản Lác
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1996d30aa50c611189cd78bb0576b18b = L.marker(
+                [21.386, 103.019],
+                {}
+            ).addTo(map_3bfc0f878576555169ff68bd684db962);
+        
+    
+        var popup_a360080461caad84bdd17d3979d7b178 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d58ea9d840df1633f53cdf00a12f561a = $(`<div id="html_d58ea9d840df1633f53cdf00a12f561a" style="width: 100.0%; height: 100.0%;">2. Điện Biên - Đồi A1</div>`)[0];
+                popup_a360080461caad84bdd17d3979d7b178.setContent(html_d58ea9d840df1633f53cdf00a12f561a);
+            
+        
+
+        marker_1996d30aa50c611189cd78bb0576b18b.bindPopup(popup_a360080461caad84bdd17d3979d7b178)
+        ;
+
+        
+    
+    
+            marker_1996d30aa50c611189cd78bb0576b18b.bindTooltip(
+                `<div>
+                     Điện Biên - Đồi A1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a3cecb8645924ff49f44900900d890f = L.marker(
+                [22.2956, 103.7768],
+                {}
+            ).addTo(map_3bfc0f878576555169ff68bd684db962);
+        
+    
+        var popup_a846915256adf15e6d168c9c8bdda645 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d3c139d5f0cf2c93fc3cde630a26bf5 = $(`<div id="html_3d3c139d5f0cf2c93fc3cde630a26bf5" style="width: 100.0%; height: 100.0%;">3. Fansipan - Nóc nhà Đông Dương</div>`)[0];
+                popup_a846915256adf15e6d168c9c8bdda645.setContent(html_3d3c139d5f0cf2c93fc3cde630a26bf5);
+            
+        
+
+        marker_4a3cecb8645924ff49f44900900d890f.bindPopup(popup_a846915256adf15e6d168c9c8bdda645)
+        ;
+
+        
+    
+    
+            marker_4a3cecb8645924ff49f44900900d890f.bindTooltip(
+                `<div>
+                     Fansipan - Nóc nhà Đông Dương
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5905be3f371202d6d0ce16d09a970cec = L.marker(
+                [22.34, 103.8442],
+                {}
+            ).addTo(map_3bfc0f878576555169ff68bd684db962);
+        
+    
+        var popup_491b5244bdb92378092f547e6365f01f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37cd964341a2ffee9b3689c0e6d26ae2 = $(`<div id="html_37cd964341a2ffee9b3689c0e6d26ae2" style="width: 100.0%; height: 100.0%;">4. Sapa - Ruộng bậc thang</div>`)[0];
+                popup_491b5244bdb92378092f547e6365f01f.setContent(html_37cd964341a2ffee9b3689c0e6d26ae2);
+            
+        
+
+        marker_5905be3f371202d6d0ce16d09a970cec.bindPopup(popup_491b5244bdb92378092f547e6365f01f)
+        ;
+
+        
+    
+    
+            marker_5905be3f371202d6d0ce16d09a970cec.bindTooltip(
+                `<div>
+                     Sapa - Ruộng bậc thang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65ffa81d2123bfd1059dffc33a9aff68 = L.marker(
+                [21.6175, 104.7417],
+                {}
+            ).addTo(map_3bfc0f878576555169ff68bd684db962);
+        
+    
+        var popup_e38941e8344416616470f2246f624b9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_938de6baa9cc467d2ca5afeb7f192c51 = $(`<div id="html_938de6baa9cc467d2ca5afeb7f192c51" style="width: 100.0%; height: 100.0%;">5. Mộc Châu - Đồi chè</div>`)[0];
+                popup_e38941e8344416616470f2246f624b9b.setContent(html_938de6baa9cc467d2ca5afeb7f192c51);
+            
+        
+
+        marker_65ffa81d2123bfd1059dffc33a9aff68.bindPopup(popup_e38941e8344416616470f2246f624b9b)
+        ;
+
+        
+    
+    
+            marker_65ffa81d2123bfd1059dffc33a9aff68.bindTooltip(
+                `<div>
+                     Mộc Châu - Đồi chè
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

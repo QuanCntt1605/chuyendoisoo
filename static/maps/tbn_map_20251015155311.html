@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_23b39fc10870515c29eb9b491e95ab6f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_23b39fc10870515c29eb9b491e95ab6f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_23b39fc10870515c29eb9b491e95ab6f = L.map(
+                "map_23b39fc10870515c29eb9b491e95ab6f",
+                {
+                    center: [21.781166666666667, 103.86829999999999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7db4fe529514b4808308a404434aca0f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_23b39fc10870515c29eb9b491e95ab6f);
+        
+    
+            var marker_072024c1ab5ba5662884a441c6193541 = L.marker(
+                [21.386, 103.019],
+                {}
+            ).addTo(map_23b39fc10870515c29eb9b491e95ab6f);
+        
+    
+        var popup_a55cfecbde17d9296392c1553b81475d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dfc5ec9d0b733baac73f799b855406f = $(`<div id="html_2dfc5ec9d0b733baac73f799b855406f" style="width: 100.0%; height: 100.0%;">1. Điện Biên - Đồi A1</div>`)[0];
+                popup_a55cfecbde17d9296392c1553b81475d.setContent(html_2dfc5ec9d0b733baac73f799b855406f);
+            
+        
+
+        marker_072024c1ab5ba5662884a441c6193541.bindPopup(popup_a55cfecbde17d9296392c1553b81475d)
+        ;
+
+        
+    
+    
+            marker_072024c1ab5ba5662884a441c6193541.bindTooltip(
+                `<div>
+                     Điện Biên - Đồi A1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_046f59e52afff241af8765ee11ca583f = L.marker(
+                [21.6175, 104.7417],
+                {}
+            ).addTo(map_23b39fc10870515c29eb9b491e95ab6f);
+        
+    
+        var popup_f7082a23f536be1e5711c82896e3856c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8f9b1beb8c79889fc90a21222d9cbe7 = $(`<div id="html_a8f9b1beb8c79889fc90a21222d9cbe7" style="width: 100.0%; height: 100.0%;">2. Mộc Châu - Đồi chè</div>`)[0];
+                popup_f7082a23f536be1e5711c82896e3856c.setContent(html_a8f9b1beb8c79889fc90a21222d9cbe7);
+            
+        
+
+        marker_046f59e52afff241af8765ee11ca583f.bindPopup(popup_f7082a23f536be1e5711c82896e3856c)
+        ;
+
+        
+    
+    
+            marker_046f59e52afff241af8765ee11ca583f.bindTooltip(
+                `<div>
+                     Mộc Châu - Đồi chè
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2cc09534dcb0c7ec9f3a685eb882de1e = L.marker(
+                [22.34, 103.8442],
+                {}
+            ).addTo(map_23b39fc10870515c29eb9b491e95ab6f);
+        
+    
+        var popup_3055d50bba688a7202c7b44dfae3bfcd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c1c7a4e01dd7e89ec861fab57b93073 = $(`<div id="html_8c1c7a4e01dd7e89ec861fab57b93073" style="width: 100.0%; height: 100.0%;">3. Sapa - Ruộng bậc thang</div>`)[0];
+                popup_3055d50bba688a7202c7b44dfae3bfcd.setContent(html_8c1c7a4e01dd7e89ec861fab57b93073);
+            
+        
+
+        marker_2cc09534dcb0c7ec9f3a685eb882de1e.bindPopup(popup_3055d50bba688a7202c7b44dfae3bfcd)
+        ;
+
+        
+    
+    
+            marker_2cc09534dcb0c7ec9f3a685eb882de1e.bindTooltip(
+                `<div>
+                     Sapa - Ruộng bậc thang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bc75cd265278d54600a785516ebad4fe {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bc75cd265278d54600a785516ebad4fe" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bc75cd265278d54600a785516ebad4fe = L.map(
+                "map_bc75cd265278d54600a785516ebad4fe",
+                {
+                    center: [21.488533333333333, 104.03359999999999],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_53c6edc71f673200863be739f48e7f63 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_53c6edc71f673200863be739f48e7f63.addTo(map_bc75cd265278d54600a785516ebad4fe);
+        
+    
+            var marker_69ec0f7dc7d01621ecd987c5d770c687 = L.marker(
+                [21.386, 103.019],
+                {
+}
+            ).addTo(map_bc75cd265278d54600a785516ebad4fe);
+        
+    
+        var popup_2cc9ecba22458de26afc744c90ae11c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4f293cdefe5f743730e6b3abb4e2499 = $(`<div id="html_c4f293cdefe5f743730e6b3abb4e2499" style="width: 100.0%; height: 100.0%;">1. Điện Biên - Đồi A1</div>`)[0];
+                popup_2cc9ecba22458de26afc744c90ae11c2.setContent(html_c4f293cdefe5f743730e6b3abb4e2499);
+            
+        
+
+        marker_69ec0f7dc7d01621ecd987c5d770c687.bindPopup(popup_2cc9ecba22458de26afc744c90ae11c2)
+        ;
+
+        
+    
+    
+            marker_69ec0f7dc7d01621ecd987c5d770c687.bindTooltip(
+                `<div>
+                     Điện Biên - Đồi A1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5982a1a62fcbaee84672156fb40d85b5 = L.marker(
+                [22.34, 103.8442],
+                {
+}
+            ).addTo(map_bc75cd265278d54600a785516ebad4fe);
+        
+    
+        var popup_7164df2a34d9c315f794486ffee7031b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9562a9fbbcbd480697b4f5ea8b95c982 = $(`<div id="html_9562a9fbbcbd480697b4f5ea8b95c982" style="width: 100.0%; height: 100.0%;">2. Sapa - Ruộng bậc thang</div>`)[0];
+                popup_7164df2a34d9c315f794486ffee7031b.setContent(html_9562a9fbbcbd480697b4f5ea8b95c982);
+            
+        
+
+        marker_5982a1a62fcbaee84672156fb40d85b5.bindPopup(popup_7164df2a34d9c315f794486ffee7031b)
+        ;
+
+        
+    
+    
+            marker_5982a1a62fcbaee84672156fb40d85b5.bindTooltip(
+                `<div>
+                     Sapa - Ruộng bậc thang
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_03c5242b1bcc85e185ff7bf42dfe5f7e = L.marker(
+                [20.7396, 105.2376],
+                {
+}
+            ).addTo(map_bc75cd265278d54600a785516ebad4fe);
+        
+    
+        var popup_506158254f9340397082a35c35a50409 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd1523049dcb7ca9300ecfef0b91881b = $(`<div id="html_bd1523049dcb7ca9300ecfef0b91881b" style="width: 100.0%; height: 100.0%;">3. Mai Châu - Bản Lác</div>`)[0];
+                popup_506158254f9340397082a35c35a50409.setContent(html_bd1523049dcb7ca9300ecfef0b91881b);
+            
+        
+
+        marker_03c5242b1bcc85e185ff7bf42dfe5f7e.bindPopup(popup_506158254f9340397082a35c35a50409)
+        ;
+
+        
+    
+    
+            marker_03c5242b1bcc85e185ff7bf42dfe5f7e.bindTooltip(
+                `<div>
+                     Mai Châu - Bản Lác
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

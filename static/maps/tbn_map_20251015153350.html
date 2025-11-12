@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aab4a632a8279a643c4ed617988f7927 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aab4a632a8279a643c4ed617988f7927" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aab4a632a8279a643c4ed617988f7927 = L.map(
+                "map_aab4a632a8279a643c4ed617988f7927",
+                {
+                    center: [22.084366666666664, 104.12089999999999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_38853559a7ca82d8304cb1b885b97bdd = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_aab4a632a8279a643c4ed617988f7927);
+        
+    
+            var marker_1e932a84025f74ee687764be4eb9d541 = L.marker(
+                [21.6175, 104.7417],
+                {}
+            ).addTo(map_aab4a632a8279a643c4ed617988f7927);
+        
+    
+        var popup_aa00cf1671803baa896493bd3fcae8db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bc7c4189dccfd4c380c75f81453cb6a = $(`<div id="html_7bc7c4189dccfd4c380c75f81453cb6a" style="width: 100.0%; height: 100.0%;">1. Mộc Châu - Đồi chè</div>`)[0];
+                popup_aa00cf1671803baa896493bd3fcae8db.setContent(html_7bc7c4189dccfd4c380c75f81453cb6a);
+            
+        
+
+        marker_1e932a84025f74ee687764be4eb9d541.bindPopup(popup_aa00cf1671803baa896493bd3fcae8db)
+        ;
+
+        
+    
+    
+            marker_1e932a84025f74ee687764be4eb9d541.bindTooltip(
+                `<div>
+                     Mộc Châu - Đồi chè
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3d4988e5c401747ea434ad2cfdd7e87 = L.marker(
+                [22.34, 103.8442],
+                {}
+            ).addTo(map_aab4a632a8279a643c4ed617988f7927);
+        
+    
+        var popup_d8d5151373d9cf04e317c2aa05643b3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_800221b60f2d14dc3704cd16e0666bd9 = $(`<div id="html_800221b60f2d14dc3704cd16e0666bd9" style="width: 100.0%; height: 100.0%;">2. Sapa - Ruộng bậc thang</div>`)[0];
+                popup_d8d5151373d9cf04e317c2aa05643b3d.setContent(html_800221b60f2d14dc3704cd16e0666bd9);
+            
+        
+
+        marker_a3d4988e5c401747ea434ad2cfdd7e87.bindPopup(popup_d8d5151373d9cf04e317c2aa05643b3d)
+        ;
+
+        
+    
+    
+            marker_a3d4988e5c401747ea434ad2cfdd7e87.bindTooltip(
+                `<div>
+                     Sapa - Ruộng bậc thang
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91f1b838f7ede2a992d30ec078a4ab84 = L.marker(
+                [22.2956, 103.7768],
+                {}
+            ).addTo(map_aab4a632a8279a643c4ed617988f7927);
+        
+    
+        var popup_254b4366a8e37adf734edc8315e9553f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9a5e2658c7890f33b25820994d0b0fe = $(`<div id="html_c9a5e2658c7890f33b25820994d0b0fe" style="width: 100.0%; height: 100.0%;">3. Fansipan - Nóc nhà Đông Dương</div>`)[0];
+                popup_254b4366a8e37adf734edc8315e9553f.setContent(html_c9a5e2658c7890f33b25820994d0b0fe);
+            
+        
+
+        marker_91f1b838f7ede2a992d30ec078a4ab84.bindPopup(popup_254b4366a8e37adf734edc8315e9553f)
+        ;
+
+        
+    
+    
+            marker_91f1b838f7ede2a992d30ec078a4ab84.bindTooltip(
+                `<div>
+                     Fansipan - Nóc nhà Đông Dương
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

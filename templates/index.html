@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Travel Tây Bắc</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <h1>🏔️ Smart Travel Tây Bắc</h1>
+        <nav>
+            <a href="/">Trang chủ</a>
+            <a href="/plan">Lịch trình</a>
+            <a href="/chat">AI Hỏi đáp</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Khám phá vẻ đẹp Tây Bắc cùng Trợ lý AI</h2>
+        <p>Nhập số ngày bạn muốn đi để được gợi ý hành trình phù hợp.</p>
+        <form action="/plan" method="get">
+            <input type="number" name="days" placeholder="Số ngày du lịch..." min="1" required>
+            <button type="submit">Gợi ý lịch trình</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Smart Travel Tây Bắc - AI Travel Assistant</p>
+    </footer>
+</body>
+</html>
